@@ -1,0 +1,20 @@
+{
+  "name": "uikit",
+  "description": "Наработка пользовательского интерефейса для проекта SuperheroFeed",
+  "main": "gulpfile.js",
+  "authors": [
+    "Ilya Pasuk"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "uikit"
+  ],
+  "homepage": "superherofeed.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
