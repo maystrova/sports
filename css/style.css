@@ -50,6 +50,44 @@ ul {
 .background {
   display: block;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .header .community ul li {
+    text-align: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 5px;
+  }
+  .header .personality ul {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .header .logo {
+    margin-left: -15px;
+    float: left;
+  }
+  .header .menu li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+  .header .active {
+    float: right;
+    margin-right: -15px;
+  }
+  .header .active li {
+    display: inline-block;
+  }
+  .header .personality {
+    height: 55px;
+  }
+  .header .personality ul {
+    float: right;
+    text-align: right;
+    margin-right: -15px;
+  }
+  .header .personality ul li {
+    display: inline-block;
+  }
+}
 .header {
   height: 90px;
 }
@@ -57,7 +95,6 @@ ul {
   text-align: center;
   background: #0E0E0E;
   height: 90px;
-  margin-left: -15px;
   float: left;
 }
 .header .logo a {
@@ -68,18 +105,11 @@ ul {
   width: 80px;
 }
 .header .personality {
-  height: 55px;
   background: #2F2F2F;
   line-height: 3.5;
   border-bottom: 2px solid #656565;
 }
-.header .personality ul {
-  float: right;
-  text-align: right;
-  margin-right: -15px;
-}
 .header .personality ul li {
-  display: inline-block;
   font-size: 13px;
   text-transform: uppercase;
   padding-left: 10px;
@@ -100,20 +130,11 @@ ul {
   background: #4F4F4F;
   line-height: 2;
 }
-.header .community .menu li {
-  display: inline-block;
-  padding-right: 10px;
-}
 .header .community .menu li a {
   color: #DCDCDC;
   font-weight: 300;
 }
-.header .community .active {
-  float: right;
-  margin-right: -15px;
-}
 .header .community .active li {
-  display: inline-block;
   padding-left: 8px;
 }
 .header .community .active li a {
