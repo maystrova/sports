@@ -18,6 +18,9 @@ a {
     text-decoration: underline;
   }
 }
+img{
+  max-width: 100%;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -98,8 +101,8 @@ ul {
 @media (min-width:992px) {
   .header {
     height: 90px;
-    .logo {
 
+    .logo {
     }
     .menu {
       white-space: nowrap;
@@ -124,12 +127,10 @@ ul {
       ul {
         float: right;
         text-align: right;
-
         white-space: nowrap;
-        .shop{
-             
-        }
 
+        .shop {
+        }
         li {
           display: inline-block;
         }
@@ -138,14 +139,12 @@ ul {
   }
 }
 @media (min-width:1200px) {
-  .shop{
-     margin-right: -15px;
+  .shop {
+    margin-right: -15px;
   }
 }
 // для всех устройств
 .header {
-  
-
   .logo {
     text-align: center;
     background: #0E0E0E;
@@ -164,7 +163,7 @@ ul {
     background: #2F2F2F;
     line-height: 3.5;
     border-bottom: 2px solid #656565;
-        overflow-x: hidden;
+    overflow-x: hidden;
 
     ul {
       li {
@@ -191,7 +190,7 @@ ul {
   .community {
     background: #4F4F4F;
     line-height: 2;
-        overflow-x: hidden;
+    overflow-x: hidden;
 
     .menu {
       li {
@@ -215,112 +214,243 @@ ul {
 }
 // адаптивность
 @media (min-width:320px) and (max-width:768px) {
-  .promo{
-    .get{
-          top: 40px;
-        left: 50px;
-  .tagline{
-    h1{
+  .promo {
+    .get {
+      top: 40px;
+      left: 50px;
+
+      .tagline {
+        h1 {
           font-size: 20px;
-    }
-  }
-  .find{
-    .shop{
+        }
+      }
+      .find {
+        .shop {
           font-size: 11px;
-    }
-    .findout{
+        }
+        .findout {
           font-size: 11px;
-              margin-right: -4px;
+          margin-right: -4px;
+        }
+      }
     }
   }
 }
+@media (min-width:768px) {
+  .promo {
+    .get {
+      top: 40px;
+      right: 200px;
+
+      .tagline {
+        h1 {
+        }
+      }
+      .find {
+        .shop {
+        }
+        .findout {
+          margin-right: -4px;
+        }
+      }
+    }
+  }
+}
+@media (min-width:992px) {
+  .promo {
+    .get {
+      top: 200px;
+      left: 200px;
+
+      .tagline {
+        h1 {
+          font-size: 40px;
+        }
+      }
+      .find {
+        .shop {
+          font-size: 14px;
+        }
+        .findout {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width:1200px) {
+}
+// для всех
+.promo {
+  position: relative;
+margin-bottom: 3px;
+
+  img {
+    padding: 0;
+  }
+  .get {
+    position: absolute;
+
+    .tagline {
+      h1 {
+        color: white;
+        font-weight: 100;
+        background: rgba(0, 0, 0, 0.54);
+        padding: 20px;
+        margin: 0;
+      }
+    }
+    .find {
+      .shop {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 14px;
+        background: #0187D6;
+        color: white;
+        font-weight: 100;
+      }
+      .findout {
+        white-space: nowrap;
+        color: #A1A1A1;
+        text-transform: uppercase;
+        background: #191919;
+        padding: 14px;
+        text-align: center;
+      }
+    }
+  }
+}
+// адаптивность
+@media (min-width:320px) and (max-width:768px) {
+  .sports {
+    ul {
+      li {
+        a {
+          img {
+          }
+          h3 {
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:768px) {
+  .sports {
+    ul {
+      li {
+        a {
+          img {
+          }
+          h3 {
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:992px) {
+  .sports {
+    ul {
+      li {
+        a {
+          img {
+          }
+          h3 {
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:1200px) {
+}
+// для всех
+.sports {
+  .sports-gallary{
+
+  }
+  ul {
+    .owl-item {
+          float: left;}
+
+    li {
+          padding: 0;
+      a {
+        display: block;
+        img {
+          max-width: 100%;
+          position: relative;
+              opacity: 0.8;
+        }
+        h3 {
+              margin: 0;
+    position: absolute;
+    bottom: 70px;
+    left: 110px;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+// адаптивность
+@media (min-width:320px) and (max-width:768px) {
+  .catalog{
+  li{
+    a{
+      img{}
+      h5{}
+      span{}
+      p{}
+    }
+  }
 }
 }
 @media (min-width:768px) {
-  .promo{
-    .get{
-          top: 40px;
-    right: 200px;
-  .tagline{
-    h1{}
-  }
-  .find{
-    .shop{}
-    .findout{
-          margin-right: -4px;
+  .catalog{
+  li{
+    a{
+      img{}
+      h5{}
+      span{}
+      p{}
     }
   }
-}
 }
 }
 @media (min-width:992px) {
-  .promo{
-     
-    .get {
-       
-        top: 200px;
-    left: 200px;
-  .tagline{
-    h1{
-      font-size: 40px;
+  .catalog{
+  li{
+    a{
+      img{}
+      h5{}
+      span{}
+      p{}
     }
   }
-  .find{
-    .shop{
-      font-size: 14px;
-    }
-    .findout{
-       font-size: 14px;
-    }
-  }
-}
 }
 }
 @media (min-width:1200px) {}
+
 // для всех
-.promo{
- position: relative;
-  img{
-    padding: 0;
-
-  }
-.get{
-     position: absolute;
-  .tagline{
-    h1{
-             
-    color: white;
-    font-weight: 100;
-    background: rgba(0, 0, 0, 0.54);
-    padding: 20px;
-        margin: 0;
-    }
-  }
-  .find{
-    .shop{
-      
-    text-transform: uppercase;
-    text-align: center;
-    padding: 14px;
-    background: #0187D6;
-        color: white;
-    font-weight: 100;
-    }
-    .findout{
-      white-space: nowrap;
-          color: #A1A1A1;
-   
-    text-transform: uppercase;
-    background: #191919;
-    padding: 14px;
-    text-align: center;
-
+.catalog{
+  
+  li{
+    a{
+      img{
+        max-width: 100%;
+      }
+      h5{}
+      span{}
+      p{}
     }
   }
 }
-}
-
-
 // bootstrap
 .container {
   margin-right: auto;
