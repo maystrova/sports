@@ -21,6 +21,9 @@ a {
 img{
   max-width: 100%;
 }
+h5{
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -55,6 +58,7 @@ ul {
     content: ' ';
   }
 }
+
 .background {
   display: block;
 }
@@ -426,8 +430,13 @@ margin-bottom: 3px;
 @media (min-width:992px) {
   .catalog{
   li{
+
     a{
-      img{}
+      img{
+         width: 40%;
+        float: left;
+            padding-right: 10px;
+      }
       h5{}
       span{}
       p{}
@@ -439,17 +448,34 @@ margin-bottom: 3px;
 
 // для всех
 .catalog{
-  
+  background: white;
+  ul{
   li{
+        display: block;
+    padding: 50px 0 50px 30px;
     a{
       img{
-        max-width: 100%;
+       
       }
-      h5{}
-      span{}
-      p{}
     }
-  }
+      h5{
+        color: #272727;
+            padding-bottom: 10px;
+    font-weight: 100;
+      }
+      p{ color: #272727;
+          font-size: 17px;
+          margin: 0;
+        }
+      a{
+        color: #272727;
+        text-transform: uppercase;
+            font-size: 11px;
+    margin: 0;
+      }
+    }
+  
+}
 }
 // bootstrap
 .container {

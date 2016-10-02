@@ -18,6 +18,9 @@ a:hover {
 img {
   max-width: 100%;
 }
+h5 {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -256,8 +259,35 @@ ul {
   font-size: 20px;
   text-transform: uppercase;
 }
-.catalog li a img {
-  max-width: 100%;
+@media (min-width: 992px) {
+  .catalog li a img {
+    width: 40%;
+    float: left;
+    padding-right: 10px;
+  }
+}
+.catalog {
+  background: white;
+}
+.catalog ul li {
+  display: block;
+  padding: 50px 0 50px 30px;
+}
+.catalog ul li h5 {
+  color: #272727;
+  padding-bottom: 10px;
+  font-weight: 100;
+}
+.catalog ul li p {
+  color: #272727;
+  font-size: 17px;
+  margin: 0;
+}
+.catalog ul li a {
+  color: #272727;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0;
 }
 .container {
   margin-right: auto;
