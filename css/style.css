@@ -15,6 +15,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+h4 {
+  margin: 0;
+}
 img {
   max-width: 100%;
 }
@@ -289,14 +292,128 @@ ul {
   font-size: 11px;
   margin: 0;
 }
-.catalog .advertising ul .enjoy {
+@media (min-width: 320px) and (max-width: 768px) {
+  .enjoy a {
+    left: 70px;
+    top: 15px;
+  }
+  .app h4 {
+    top: 60px;
+    left: 70px;
+  }
+  .app a {
+    bottom: 50px;
+    left: 115px;
+    padding: 15px;
+  }
+  .nb .logo {
+    top: 60px;
+    left: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .enjoy a {
+    top: 0;
+    left: 5px;
+  }
+  .app h4 {
+    top: 40px;
+    left: 15px;
+  }
+  .app a {
+    padding: 10px;
+    bottom: 20px;
+    left: 60px;
+  }
+  .nb .logo {
+    top: 50px;
+    left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .enjoy a {
+    top: 0;
+    left: 100px;
+  }
+  .app h4 {
+    top: 90px;
+    left: 90px;
+  }
+  .app a {
+    bottom: 60px;
+    left: 140px;
+    padding: 10px;
+  }
+  .nb .logo {
+    top: 90px;
+    left: 10px;
+  }
+}
+.advertising ul .enjoy {
   padding: 0;
 }
-.catalog .advertising ul .app {
+.advertising ul .enjoy img {
+  position: relative;
+  opacity: 0.7;
+}
+.advertising ul .enjoy a {
+  display: block;
+  position: absolute;
+}
+.advertising ul .enjoy a h4 {
+  color: #0A0A0A;
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.advertising ul .enjoy a span {
+  color: #0A0A0A;
+}
+.advertising ul .app {
   padding: 0;
 }
-.catalog .advertising ul .nb {
+.advertising ul .app img {
+  position: relative;
+  opacity: 0.7;
+}
+.advertising ul .app h4 {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 0.5px 0px;
+}
+.advertising ul .app a {
+  position: absolute;
+  text-transform: uppercase;
+  color: white;
+  background: #E93E6B;
+}
+.advertising ul .nb {
   padding: 0;
+}
+.advertising ul .nb img {
+  opacity: 0.7;
+  position: relative;
+}
+.advertising ul .nb .logo {
+  position: absolute;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.advertising ul .nb .logo img {
+  width: 50px;
+  opacity: 1;
+  float: left;
+  margin-right: 5px;
+}
+.advertising ul .nb .logo p {
+  color: #151414;
+  text-transform: uppercase;
+}
+.advertising ul .nb .logo p a {
+  color: #D35467;
+  text-transform: uppercase;
 }
 .container {
   margin-right: auto;
