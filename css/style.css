@@ -284,7 +284,7 @@ ul {
 .catalog ul li a p {
   color: #272727;
   font-size: 17px;
-  margin: 0;
+  margin-bottom: 3px;
 }
 .catalog ul li a a {
   color: #272727;
@@ -292,73 +292,27 @@ ul {
   font-size: 11px;
   margin: 0;
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  .enjoy a {
-    left: 70px;
-    top: 15px;
-  }
-  .app h4 {
-    top: 60px;
-    left: 70px;
-  }
-  .app a {
-    bottom: 50px;
-    left: 115px;
-    padding: 15px;
-  }
-  .nb .logo {
-    top: 60px;
-    left: 70px;
-  }
-}
-@media (min-width: 768px) {
-  .enjoy a {
-    top: 0;
-    left: 5px;
-  }
-  .app h4 {
-    top: 40px;
-    left: 15px;
-  }
-  .app a {
-    padding: 10px;
-    bottom: 20px;
-    left: 60px;
-  }
-  .nb .logo {
-    top: 50px;
-    left: 10px;
-  }
-}
-@media (min-width: 992px) {
-  .enjoy a {
-    top: 0;
-    left: 100px;
-  }
-  .app h4 {
-    top: 90px;
-    left: 90px;
-  }
-  .app a {
-    bottom: 60px;
-    left: 140px;
-    padding: 10px;
-  }
-  .nb .logo {
-    top: 90px;
-    left: 10px;
-  }
+.catalog ul li a a:hover {
+  cursor: pointer;
 }
 .advertising ul .enjoy {
   padding: 0;
+  position: relative;
+}
+.advertising ul .enjoy:hover {
+  opacity: 0.7;
 }
 .advertising ul .enjoy img {
-  position: relative;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .advertising ul .enjoy a {
   display: block;
   position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
 }
 .advertising ul .enjoy a h4 {
   color: #0A0A0A;
@@ -371,35 +325,54 @@ ul {
 }
 .advertising ul .app {
   padding: 0;
+  position: relative;
+}
+.advertising ul .app:hover {
+  opacity: 0.6;
 }
 .advertising ul .app img {
-  position: relative;
   opacity: 0.7;
 }
-.advertising ul .app h4 {
+.advertising ul .app .get {
   position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+.advertising ul .app .get h4 {
   text-transform: uppercase;
   font-size: 20px;
   font-style: italic;
   text-shadow: 0.5px 0px;
+  margin-bottom: 25px;
 }
-.advertising ul .app a {
-  position: absolute;
+.advertising ul .app .get a {
   text-transform: uppercase;
   color: white;
   background: #E93E6B;
+  padding: 15px;
 }
 .advertising ul .nb {
   padding: 0;
+  position: relative;
+}
+.advertising ul .nb:hover {
+  opacity: 0.6;
 }
 .advertising ul .nb img {
   opacity: 0.7;
-  position: relative;
 }
 .advertising ul .nb .logo {
   position: absolute;
   line-height: 1.5;
   white-space: nowrap;
+  top: 100px;
+  left: 10px;
+  bottom: 0;
+  right: 0;
+  text-align: left;
 }
 .advertising ul .nb .logo img {
   width: 50px;

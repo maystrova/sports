@@ -18,7 +18,7 @@ a {
     text-decoration: underline;
   }
 }
-h4{
+h4 {
   margin: 0;
 }
 img {
@@ -467,188 +467,227 @@ ul {
       display: block;
       padding: 50px 0 50px 30px;
 
+     
+      h5 {
+        color: #272727;
+        padding-bottom: 10px;
+        font-weight: 100;
+      }
+      p {
+        color: #272727;
+        font-size: 17px;
+        margin-bottom: 3px;
+      }
       a {
-        img {
-        }
-        h5 {
-          color: #272727;
-          padding-bottom: 10px;
-          font-weight: 100;
-        }
-        p {
-          color: #272727;
-          font-size: 17px;
-          margin: 0;
-        }
-        a {
-          color: #272727;
-          text-transform: uppercase;
-          font-size: 11px;
-          margin: 0;
+        color: #272727;
+        text-transform: uppercase;
+        font-size: 11px;
+        margin: 0;
+
+        &:hover {
+          cursor: pointer;
         }
       }
     }
   }
 }
+}
 // реклама
 // адаптивность
 @media (min-width:320px) and (max-width:768px) {
-  .enjoy{
-    a{
-          left: 70px;
-              top: 15px;
-    }
+.enjoy {
+  a {
   }
-  .app{
-    h4{
-          top: 60px;
-    left: 70px;
-    }
-    a{
-             bottom: 50px;
-    left: 115px;
-    padding: 15px;
-    }
+}
+.app {
+  h4 {
   }
-  .nb{
-    .logo{
-          top: 60px;
-    left: 70px;
-    }
+  a {
   }
-  
+}
+.nb {
+  .logo {
+  }
+}
 }
 @media (min-width:768px) {
-  .enjoy{
-    a{
-          top: 0;
-    left: 5px;
-    }
+.enjoy {
+  a {
   }
-  .app{
-    h4{
-          top: 40px;
-    left: 15px;
-    }
-    a{
-          padding: 10px;
-    bottom: 20px;
-    left: 60px;
-    }
+}
+.app {
+  h4 {
   }
-  .nb{
-    .logo{
-          top: 50px;
-    left: 10px;
-    }
+  a {
   }
-  
+}
+.nb {
+  .logo {
+  }
+}
 }
 @media (min-width:992px) {
-  .enjoy{
-    a{
-      top: 0;
-      left: 100px;
-    }
+.enjoy {
+  a {
   }
-.app{
-  h4{top: 90px;
-    left: 90px;}
-    a{
-      bottom: 60px;
-    left: 140px;
-    padding: 10px;
-    }
 }
-.nb{
-  .logo{
-    top: 90px;
-    left: 10px;
+.app {
+  h4 {
+  }
+  a {
+  }
+}
+.nb {
+  .logo {
   }
 }
 }
 @media (min-width:1200px) {
 }
 // для всех
-.advertising{
-  ul{
-    .enjoy{
-      padding: 0;
-      img{
-        position: relative;
-            opacity: 0.7;
-      }
-      a{
-            display: block;
-    position: absolute;
-    
-    
-        h4{
-          color: #0A0A0A;
-              font-size: 30px;
-    font-weight: 100;
+.advertising {
+ul {
+  .enjoy {
+    padding: 0;
+    position: relative;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    img {
+      opacity: 0.8;
+    }
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+
+      h4 {
+        color: #0A0A0A;
+        font-size: 30px;
+        font-weight: 100;
         margin-top: 20px;
-        }
-        span{
-          color: #0A0A0A;
-
-        }
+      }
+      span {
+        color: #0A0A0A;
       }
     }
-    .app{
-      padding: 0;
-      img{
-        position: relative;
-            opacity: 0.7;
-      }
-      h4{
-        position: absolute;
-    
-    text-transform: uppercase;
-    font-size: 20px;
-    font-style: italic;
-    text-shadow: 0.5px 0px;
-      }
-      a{
-            position: absolute;
-    
+  }
+  .app {
+    padding: 0;
+    position: relative;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+    img {
+      opacity: 0.7;
+    }
+    .get {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+
+      h4 {
         text-transform: uppercase;
-    color: white;
-    background: #E93E6B;
-    
+        font-size: 20px;
+        font-style: italic;
+        text-shadow: 0.5px 0px;
+        margin-bottom: 25px;
+      }
+      a {
+        text-transform: uppercase;
+        color: white;
+        background: #E93E6B;
+        padding: 15px;
       }
     }
-    .nb{
-       padding: 0;
-      img{
-            opacity: 0.7;
-            position: relative;
+  }
+  .nb {
+    padding: 0;
+    position: relative;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+    img {
+      opacity: 0.7;
+    }
+    .logo {
+      position: absolute;
+      line-height: 1.5;
+      white-space: nowrap;
+      top: 100px;
+      left: 10px;
+      bottom: 0;
+      right: 0;
+      text-align: left;
+
+      img {
+        width: 50px;
+        opacity: 1;
+        float: left;
+        margin-right: 5px;
       }
-      .logo{
-        position: absolute;
-            
-    line-height: 1.5;
-    white-space: nowrap;
-        img{
-              width: 50px;
-              opacity: 1;
-              float: left;
-                  margin-right: 5px;
-        }
-        p{
-              color: #151414;
-          text-transform: uppercase;
+      p {
+        color: #151414;
+        text-transform: uppercase;
 
-          a{
-            color: #D35467;
+        a {
+          color: #D35467;
           text-transform: uppercase;
-
-          }
         }
       }
     }
   }
 }
+}
+
+// про марафон
+// адаптивность
+@media (min-width:320px) and (max-width:768px) {}
+@media (min-width:768px) {}
+@media (min-width:992px) {}
+@media (min-width:1200px) {}
+
+// для всех
+.overview{
+  .marathon{
+
+    img{
+      padding: 0;
+    }
+    .text{
+      img{}
+      h5{}
+      span{}
+    }
+  }
+  .news{
+    h5{}
+    ul{
+      li{
+        a{
+          h4{}
+          p{}
+          span{}
+        }
+      }
+    }
+    a{}
+  }
+}
+
 // bootstrap
 .container {
 margin-right: auto;
