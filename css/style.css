@@ -14,6 +14,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  color: grey;
 }
 h4 {
   margin: 0;
@@ -276,23 +277,23 @@ ul {
   display: block;
   padding: 50px 0 50px 30px;
 }
-.catalog ul li a h5 {
+.catalog ul li h5 {
   color: #272727;
   padding-bottom: 10px;
   font-weight: 100;
 }
-.catalog ul li a p {
+.catalog ul li p {
   color: #272727;
   font-size: 17px;
   margin-bottom: 3px;
 }
-.catalog ul li a a {
+.catalog ul li a {
   color: #272727;
   text-transform: uppercase;
   font-size: 11px;
   margin: 0;
 }
-.catalog ul li a a:hover {
+.catalog ul li a:hover {
   cursor: pointer;
 }
 .advertising ul .enjoy {
@@ -300,7 +301,8 @@ ul {
   position: relative;
 }
 .advertising ul .enjoy:hover {
-  opacity: 0.7;
+  border: 2px solid grey;
+  cursor: pointer;
 }
 .advertising ul .enjoy img {
   opacity: 0.8;
@@ -328,7 +330,8 @@ ul {
   position: relative;
 }
 .advertising ul .app:hover {
-  opacity: 0.6;
+  border: 2px solid grey;
+  cursor: pointer;
 }
 .advertising ul .app img {
   opacity: 0.7;
@@ -359,7 +362,8 @@ ul {
   position: relative;
 }
 .advertising ul .nb:hover {
-  opacity: 0.6;
+  border: 2px solid grey;
+  cursor: pointer;
 }
 .advertising ul .nb img {
   opacity: 0.7;
@@ -387,6 +391,88 @@ ul {
 .advertising ul .nb .logo p a {
   color: #D35467;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .news .articles {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .overview .news {
+    height: 533.39px;
+  }
+}
+.overview .marathon {
+  padding: 0;
+  position: relative;
+}
+.overview .marathon .text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 0;
+  right: 0;
+  color: #ECEDF1;
+  text-shadow: 1px 0 grey;
+}
+.overview .marathon .text img {
+  width: 50px;
+  background: #34393F;
+  padding: 12px;
+  border-radius: 50%;
+  border: 2px solid #BF272C;
+  float: left;
+  margin-right: 10px;
+}
+.overview .marathon .text h5 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.overview .marathon .text span {
+  font-weight: 100;
+}
+.overview .news {
+  background: #1A1A1A;
+  padding: 10px 30px;
+}
+.overview .news h3 {
+  color: #ECEDF1;
+  font-weight: 100;
+  font-size: 16px;
+}
+.overview .news ul {
+  margin-bottom: 30px;
+}
+.overview .news ul li {
+  margin-bottom: 10px;
+}
+.overview .news ul li a h4 {
+  color: #6C6C6C;
+  font-size: 25px;
+  font-weight: 100;
+}
+.overview .news ul li a p {
+  color: #ECEDF1;
+  font-weight: 100;
+  font-size: 12px;
+  margin-top: 0;
+  border-bottom: 2px solid #212121;
+  padding-bottom: 10px;
+}
+.overview .news ul li a span {
+  color: #6C6C6C;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.overview .news ul li a span:last-child {
+  float: right;
+}
+.overview .news .articles {
+  background: #D2232C;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
 }
 .container {
   margin-right: auto;
