@@ -52,6 +52,25 @@ ul {
 .icon-20.i-left {
   background-position: 0 -60px;
 }
+.social-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/social.jpg);
+  background-size: 20px 80px;
+}
+.social-icon.i-vk {
+  background-position: 0 0px;
+}
+.social-icon.i-v {
+  background-position: 0 -20px;
+}
+.social-icon.i-skype {
+  background-position: 0 -40px;
+}
+.social-icon.i-jj {
+  background-position: 0 -60px;
+}
 .clearfix:after,
 .row:after {
   display: block;
@@ -288,7 +307,7 @@ ul {
 .catalog ul li p {
   color: #272727;
   font-size: 17px;
-  margin-bottom: 3px;
+  margin: 0;
 }
 .catalog ul li a {
   color: #272727;
@@ -398,6 +417,7 @@ ul {
 @media (min-width: 992px) {
   .overview .news {
     height: 533.39px;
+    border-left: 1px solid grey;
   }
 }
 .overview .marathon {
@@ -437,6 +457,7 @@ ul {
   color: #ECEDF1;
   font-weight: 100;
   font-size: 16px;
+  margin: 15px 0;
 }
 .overview .news ul {
   margin-bottom: 30px;
@@ -472,8 +493,28 @@ ul {
   color: white;
   font-size: 10px;
 }
-.footer {
-  position: relative;
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    position: relative;
+  }
+  .footer .newsletter {
+    position: absolute;
+    top: 75px;
+    right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .footer h3 {
+    border-bottom: 1px solid grey;
+  }
+  .sports {
+    border-right: 1px solid grey;
+  }
 }
 .footer ul {
   padding: 0;
@@ -525,6 +566,8 @@ ul {
   text-transform: uppercase;
   background: #1A1A1A;
   padding: 10px;
+  position: absolute;
+  top: 90px;
 }
 .footer .sports {
   background: #4D4D4D;

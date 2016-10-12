@@ -56,6 +56,26 @@ ul {
     background-position: 0 -@icon-size*3;
   }
 }
+.social-icon {
+   display: inline-block;
+  width: @icon-size;
+  height: @icon-size;
+  background-image: url(../images/social.jpg);
+  background-size: @icon-size @icon-size*4;
+
+    &.i-vk {
+    background-position: 0 0px;
+  }
+  &.i-v {
+    background-position: 0 -@icon-size;
+  }
+  &.i-skype {
+    background-position: 0 -@icon-size*2;
+  }
+  &.i-jj {
+    background-position: 0 -@icon-size*3;
+  }
+}
 .clearfix, .row {
   &:after {
     display: block;
@@ -479,7 +499,7 @@ ul {
       p {
         color: #272727;
         font-size: 17px;
-        margin-bottom: 3px;
+        margin: 0;
       }
       a {
         color: #272727;
@@ -668,6 +688,7 @@ ul {
   .overview {
     .news {
       height: 533.39px;
+          border-left: 1px solid grey;
     }
   }
 }
@@ -716,6 +737,7 @@ ul {
       color: #ECEDF1;
       font-weight: 100;
       font-size: 16px;
+          margin: 15px 0;
     }
     ul {
       margin-bottom: 30px;
@@ -761,16 +783,37 @@ ul {
 // футер
 // адаптивность
 @media (min-width:320px) and (max-width:768px) {
+  .footer{
+    text-align: center;
+    
+  }
 }
 @media (min-width:768px) {
+  .footer{
+    position: relative;
+    .newsletter{
+       position: absolute;
+        top: 75px;
+    right: 50px;
+    }
+  }
 }
 @media (min-width:992px) {
+    .footer{
+    h3{
+          border-bottom: 1px solid grey;
+    }
+  }
+  .sports{
+        border-right: 1px solid grey;
+  }
+
 }
 @media (min-width:1200px) {
 }
 // для всех
 .footer {
-  position: relative;
+  
 
   ul {
     padding: 0;
@@ -797,6 +840,7 @@ ul {
   }
   .newsletter {
     color: #F0EBF1;
+   
 
     h6 {
       font-size: 14px;
@@ -824,6 +868,8 @@ ul {
       text-transform: uppercase;
       background: #1A1A1A;
       padding: 10px;
+          position: absolute;
+    top: 90px;
     }
   }
   .sports {
