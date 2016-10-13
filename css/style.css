@@ -512,8 +512,13 @@ ul {
   .footer h3 {
     border-bottom: 1px solid grey;
   }
-  .sports {
+  .footer .sports {
     border-right: 1px solid grey;
+  }
+  .footer .social {
+    position: absolute;
+    right: 0;
+    top: 10px;
   }
 }
 .footer ul {
@@ -577,6 +582,9 @@ ul {
 }
 .footer .sports li a {
   text-transform: uppercase;
+}
+.footer .social img {
+  width: 30px;
 }
 .container {
   margin-right: auto;
