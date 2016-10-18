@@ -99,12 +99,16 @@ ul {
           text-align: center;
           border-bottom: 1px solid #DCDCDC;
           padding-bottom: 5px;
+
         }
       }
     }
     .personality {
       ul {
         text-align: center;
+        .search{
+
+        }
       }
     }
   }
@@ -124,6 +128,9 @@ ul {
     .personality {
       ul {
         text-align: center;
+        .shop{
+              margin: 0px -15px;
+        }
       }
     }
   }
@@ -158,8 +165,15 @@ ul {
         float: right;
         text-align: right;
         white-space: nowrap;
+        .search{
+          input{
+            display: none;
+          }
+        }
 
         .shop {
+             margin-right: -15px;
+                 margin-left: 10px;
         }
         li {
           display: inline-block;
@@ -170,7 +184,7 @@ ul {
 }
 @media (min-width:1200px) {
   .shop {
-    margin-right: -15px;
+    
   }
 }
 // для всех устройств
@@ -205,6 +219,18 @@ ul {
           color: #7B7B7B;
           padding-left: 10px;
         }
+      }
+      .search{
+        input{
+                width: 100%;
+    border: 2px solid #333232;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    background: #444444;
+        font-size: 15px;
+    color: white;
+          }
       }
       .shop {
         background: #212121;
@@ -549,6 +575,10 @@ ul {
   }
   .app {
     h4 {
+      p{
+            margin-left: 21%;
+    font-size: 12px;
+      }
     }
     a {
     }
@@ -565,6 +595,11 @@ ul {
   }
   .app {
     h4 {
+      font-size: 20px;
+      p{
+        font-size: 15px;
+         margin-left: 32%;
+      }
     }
     a {
     }
@@ -622,7 +657,7 @@ ul {
     }
     h4 {
       text-transform: uppercase;
-      font-size: 20px;
+      
       font-style: italic;
       text-shadow: 0.5px 0px;
       margin-bottom: 25px;
@@ -633,16 +668,20 @@ ul {
       right: 0;
       bottom: 0;
       text-align: center;
+      p{
+            text-transform: uppercase;
+    color: #fff;
+    background: #E93E6B;
+    padding: 15px;
+    
+    
+    font-weight: 100;
+    font-style: normal;
+    width: 150px;
+       
+      }
     }
-    span {
-      text-transform: uppercase;
-      color: white;
-      background: #E93E6B;
-      padding: 15px;
-      position: absolute;
-      bottom: 80px;
-      left: 140px;
-    }
+
   }
   .nb {
     padding: 0;
@@ -768,7 +807,7 @@ ul {
             }
           }
         }
-      }
+      
       .articles {
         background: #D2232C;
         padding: 15px;
@@ -782,6 +821,7 @@ ul {
         }
       }
     }
+    }
   }
 }
 // футер
@@ -789,20 +829,41 @@ ul {
 @media (min-width:320px) and (max-width:768px) {
   .footer {
     text-align: center;
+    ul{
+      li{
+        padding: 10px;
+            border-bottom: 1px solid white;
+            &:last-child{
+              border-bottom: none;
+            }
+            a{
+              padding: 10px 200px;
+            }
+      }
+    }
   }
 }
 @media (min-width:768px) {
   .footer {
-    position: relative;
+    text-align: center;
+    ul{
+      li{
+        padding: 10px;
+            border-bottom: 1px solid white;
+             &:last-child{
+              border-bottom: none;
+            }
+            a{
+              padding: 10px 300px;
+            }
+      }
+    }
 
     .newsletter {
-      position: absolute;
-      top: 75px;
-      right: 50px;
+     
 
       a {
-        position: absolute;
-        top: 120px;
+      
       }
       .support {
       }
@@ -811,6 +872,12 @@ ul {
 }
 @media (min-width:992px) {
   .footer {
+    ul{
+      height: 300px;
+      li{
+        padding: 4px 0 0 15px;
+      }
+    }
     h3 {
       border-bottom: 1px solid grey;
     }
@@ -830,7 +897,7 @@ ul {
 .footer {
   ul {
     padding: 0;
-    height: 300px;
+    
     background: #333333;
 
     a {
@@ -851,7 +918,7 @@ ul {
       }
     }
     li {
-      padding: 4px 0 0 15px;
+      
 
       a {
         color: #F0EBF1;
