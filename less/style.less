@@ -1,4 +1,4 @@
-@icon-size: 20px;
+@icon-size: 15px;
 
 body {
   font-size: 15px;
@@ -41,7 +41,7 @@ ul {
   width: @icon-size;
   height: @icon-size;
   background-image: url(../images/icons.png);
-  background-size: @icon-size @icon-size*4;
+  background-size: @icon-size @icon-size*5;
 
   &.i-search {
     background-position: 0 0px;
@@ -49,31 +49,14 @@ ul {
   &.i-down {
     background-position: 0 -@icon-size;
   }
+  &.i-like {
+    background-position: 0 -@icon-size*2;
+  }
+  &.i-chat {
+    background-position: 0 -@icon-size*3;
+  }
   &.i-right {
-    background-position: 0 -@icon-size*2;
-  }
-  &.i-left {
-    background-position: 0 -@icon-size*3;
-  }
-}
-.social-icon {
-  display: inline-block;
-  width: @icon-size;
-  height: @icon-size;
-  background-image: url(../images/social.jpg);
-  background-size: @icon-size @icon-size*4;
-
-  &.i-vk {
-    background-position: 0 0px;
-  }
-  &.i-v {
-    background-position: 0 -@icon-size;
-  }
-  &.i-skype {
-    background-position: 0 -@icon-size*2;
-  }
-  &.i-jj {
-    background-position: 0 -@icon-size*3;
+    background-position: 0 -@icon-size*4;
   }
 }
 .clearfix, .row {
@@ -99,15 +82,20 @@ ul {
           text-align: center;
           border-bottom: 1px solid #DCDCDC;
           padding-bottom: 5px;
-
         }
       }
     }
     .personality {
       ul {
         text-align: center;
-        .search{
 
+        .search {
+          position: relative;
+          i{
+                position: absolute;
+    top: 13px;
+    left: 25px;
+          }
         }
       }
     }
@@ -128,8 +116,17 @@ ul {
     .personality {
       ul {
         text-align: center;
-        .shop{
-              margin: 0px -15px;
+        .search{
+          position: relative;
+          i{
+                position: absolute;
+    top: 13px;
+    left: 25px;
+          }
+        }
+
+        .shop {
+          margin: 0px -15px;
         }
       }
     }
@@ -165,15 +162,15 @@ ul {
         float: right;
         text-align: right;
         white-space: nowrap;
-        .search{
-          input{
+
+        .search {
+          input {
             display: none;
           }
         }
-
         .shop {
-             margin-right: -15px;
-                 margin-left: 10px;
+          margin-right: -15px;
+          margin-left: 10px;
         }
         li {
           display: inline-block;
@@ -184,7 +181,6 @@ ul {
 }
 @media (min-width:1200px) {
   .shop {
-    
   }
 }
 // для всех устройств
@@ -214,23 +210,24 @@ ul {
       li {
         font-size: 13px;
         text-transform: uppercase;
+        padding-left: 10px;
 
         a {
           color: #7B7B7B;
-          padding-left: 10px;
+          padding: 10px 0;
         }
       }
-      .search{
-        input{
-                width: 100%;
-    border: 2px solid #333232;
-    height: 30px;
-    border-radius: 50px;
-    outline: none;
-    background: #444444;
-        font-size: 15px;
-    color: white;
-          }
+      .search {
+        input {
+          width: 100%;
+          border: 2px solid #333232;
+          height: 30px;
+          border-radius: 50px;
+          outline: none;
+          background: #444444;
+          font-size: 15px;
+          color: white;
+        }
       }
       .shop {
         background: #212121;
@@ -240,6 +237,7 @@ ul {
         a {
           color: #F6F6F6;
           font-weight: 100;
+          padding: 15px 0px;
         }
       }
     }
@@ -254,15 +252,18 @@ ul {
         a {
           color: #DCDCDC;
           font-weight: 300;
+          padding: 10px 0px;
         }
       }
     }
     .active {
       li {
+        padding-left: 8px;
+
         a {
           color: #DCDCDC;
           font-weight: 300;
-          padding-left: 8px;
+          padding: 15px 0px;
         }
       }
     }
@@ -314,6 +315,7 @@ ul {
 }
 @media (min-width:992px) {
   .promo {
+        margin-bottom: 0;
     .get {
       top: 200px;
       left: 200px;
@@ -367,7 +369,7 @@ ul {
 
         &:hover {
           text-decoration: none;
-          box-shadow: 0px 0px 15px;
+          box-shadow: 0px 0px 10px;
         }
       }
       .findout {
@@ -380,7 +382,7 @@ ul {
 
         &:hover {
           text-decoration: none;
-          box-shadow: 0px 0px 15px;
+          box-shadow: 0px 0px 10px;
         }
       }
     }
@@ -575,9 +577,9 @@ ul {
   }
   .app {
     h4 {
-      p{
-            margin-left: 21%;
-    font-size: 12px;
+      p {
+        margin-left: 21%;
+        font-size: 12px;
       }
     }
     a {
@@ -589,6 +591,9 @@ ul {
   }
 }
 @media (min-width:992px) {
+  .advertising{
+        margin-bottom: 0;
+
   .enjoy {
     a {
     }
@@ -596,9 +601,10 @@ ul {
   .app {
     h4 {
       font-size: 20px;
-      p{
+
+      p {
         font-size: 15px;
-         margin-left: 32%;
+        margin-left: 32%;
       }
     }
     a {
@@ -609,10 +615,14 @@ ul {
     }
   }
 }
+}
 @media (min-width:1200px) {
 }
 // для всех
 .advertising {
+  img{
+    height: 265px;
+  }
   .enjoy {
     padding: 0;
     position: relative;
@@ -657,7 +667,6 @@ ul {
     }
     h4 {
       text-transform: uppercase;
-      
       font-style: italic;
       text-shadow: 0.5px 0px;
       margin-bottom: 25px;
@@ -668,20 +677,17 @@ ul {
       right: 0;
       bottom: 0;
       text-align: center;
-      p{
-            text-transform: uppercase;
-    color: #fff;
-    background: #E93E6B;
-    padding: 15px;
-    
-    
-    font-weight: 100;
-    font-style: normal;
-    width: 150px;
-       
+
+      p {
+        text-transform: uppercase;
+        color: #fff;
+        background: #E93E6B;
+        padding: 15px;
+        font-weight: 100;
+        font-style: normal;
+        width: 150px;
       }
     }
-
   }
   .nb {
     padding: 0;
@@ -703,8 +709,9 @@ ul {
       right: 0;
       text-align: left;
 
-      img {
+      .newb {
         width: 50px;
+        height: 50px;
         opacity: 1;
         float: left;
         margin-right: 5px;
@@ -739,11 +746,24 @@ ul {
 }
 @media (min-width:992px) {
   .overview {
+    position: relative;
+
+    .marathon {
+      .london {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        bottom: 0;
+        right: 0;
+      }
+    
     .news {
       height: 533.39px;
       border-left: 1px solid grey;
+      float: right;
     }
   }
+}
 }
 @media (min-width:1200px) {
 }
@@ -754,13 +774,30 @@ ul {
       background-image: url('/images/marathon.jpg');
       background-size: cover;
       height: 100%;
+      &:hover{
+        text-decoration: none;
+        box-shadow: 0 0 10px black;
+        opacity: 0.9;
+      }
+      img{
+            width: 50px;
+    background: #333A40;
+    padding: 12px;
+    border-radius: 50%;
+    border: 2px solid #BA2C32;
+    float: left;
+            margin: 30px 10px 0 0;
+      }
 
       h5 {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 100;
+        color: white;
+            padding-top: 30px;
       }
       span {
         font-weight: 100;
+        color: white;
       }
     }
     .news {
@@ -807,20 +844,19 @@ ul {
             }
           }
         }
-      
-      .articles {
-        background: #D2232C;
-        padding: 15px;
-        text-transform: uppercase;
-        color: white;
-        font-size: 10px;
+        .articles {
+          background: #D2232C;
+          padding: 15px;
+          text-transform: uppercase;
+          color: white;
+          font-size: 10px;
 
-        &:hover {
-          text-decoration: none;
-          box-shadow: 0px 0px 15px;
+          &:hover {
+            text-decoration: none;
+            box-shadow: 0px 0px 15px;
+          }
         }
       }
-    }
     }
   }
 }
@@ -829,16 +865,18 @@ ul {
 @media (min-width:320px) and (max-width:768px) {
   .footer {
     text-align: center;
-    ul{
-      li{
+
+    ul {
+      li {
         padding: 10px;
-            border-bottom: 1px solid white;
-            &:last-child{
-              border-bottom: none;
-            }
-            a{
-              padding: 10px 200px;
-            }
+        border-bottom: 1px solid white;
+
+        &:last-child {
+          border-bottom: none;
+        }
+        a {
+          padding: 10px 200px;
+        }
       }
     }
   }
@@ -846,24 +884,22 @@ ul {
 @media (min-width:768px) {
   .footer {
     text-align: center;
-    ul{
-      li{
+
+    ul {
+      li {
         padding: 10px;
-            border-bottom: 1px solid white;
-             &:last-child{
-              border-bottom: none;
-            }
-            a{
-              padding: 10px 300px;
-            }
+        border-bottom: 1px solid white;
+
+        &:last-child {
+          border-bottom: none;
+        }
+        a {
+          padding: 10px 300px;
+        }
       }
     }
-
     .newsletter {
-     
-
       a {
-      
       }
       .support {
       }
@@ -872,14 +908,25 @@ ul {
 }
 @media (min-width:992px) {
   .footer {
-    ul{
+    text-align: left;
+    position: relative;
+
+    ul {
       height: 300px;
-      li{
+
+      li {
         padding: 4px 0 0 15px;
+        border-bottom: none;
+        white-space: nowrap;
+
+        a {
+          padding: 15px;
+        }
       }
     }
     h3 {
-      border-bottom: 1px solid grey;
+      border-bottom: 1px solid #9e9a9a;
+      border-top: 1px solid #9e9a9a;
     }
     .sports {
       border-right: 1px solid grey;
@@ -889,6 +936,11 @@ ul {
       right: 0;
       top: 10px;
     }
+    .newsletter {
+      position: absolute;
+      top: 130px;
+      right: 60px;
+    }
   }
 }
 @media (min-width:1200px) {
@@ -897,7 +949,6 @@ ul {
 .footer {
   ul {
     padding: 0;
-    
     background: #333333;
 
     a {
@@ -905,7 +956,7 @@ ul {
         color: #F0EBF1;
         text-transform: uppercase;
         font-weight: 100;
-        padding: 15px;
+        padding: 15px 30px;
         background: #222222;
         margin-bottom: 15px;
 
@@ -918,8 +969,6 @@ ul {
       }
     }
     li {
-      
-
       a {
         color: #F0EBF1;
         font-weight: 100;
@@ -963,7 +1012,7 @@ ul {
 
       &:hover {
         text-decoration: none;
-        opacity: 0.9;
+        box-shadow: 0 0 10px;
       }
     }
   }
