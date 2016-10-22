@@ -36,6 +36,42 @@ ul {
   padding: 0;
   list-style: none;
 }
+// Buttons
+.button {
+  background: #0187D6;
+  display: inline-block;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  &.danger {
+    background-color: #D2232C;
+    &:hover {
+      background-color: #8f181e;
+    }
+  }
+  &.warning {
+    background-color: #FFCC00;
+    &:hover {
+      background-color: #d8ad00;
+    }
+  }
+  &.success {
+    background-color: #4CAF50;
+    &:hover {
+      background-color: #3a863d;
+    }
+
+  }
+}
+// END Buttons
 .icon-20 {
   display: inline-block;
   width: @icon-size;
@@ -82,6 +118,11 @@ ul {
           text-align: center;
           border-bottom: 1px solid #DCDCDC;
           padding-bottom: 5px;
+          border-bottom: 1px solid white;
+
+          a {
+            padding: 10px 100px;
+          }
         }
       }
     }
@@ -91,17 +132,18 @@ ul {
 
         .search {
           position: relative;
-          i{
-                position: absolute;
-    top: 13px;
-    left: 25px;
+
+          i {
+            position: absolute;
+            top: 13px;
+            left: 25px;
           }
         }
       }
     }
   }
 }
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width:992px) {
   .header {
     .logo {
     }
@@ -110,21 +152,27 @@ ul {
         li {
           text-align: center;
           padding-bottom: 5px;
+          border-bottom: 1px solid white;
+
+          a {
+            padding: 10px 100px;
+          }
         }
       }
     }
     .personality {
       ul {
         text-align: center;
-        .search{
+
+        .search {
           position: relative;
-          i{
-                position: absolute;
-    top: 13px;
-    left: 25px;
+
+          i {
+            position: absolute;
+            top: 13px;
+            left: 25px;
           }
         }
-
         .shop {
           margin: 0px -15px;
         }
@@ -166,6 +214,10 @@ ul {
         .search {
           input {
             display: none;
+
+            i {
+              position: none;
+            }
           }
         }
         .shop {
@@ -315,7 +367,8 @@ ul {
 }
 @media (min-width:992px) {
   .promo {
-        margin-bottom: 0;
+    margin-bottom: 0;
+
     .get {
       top: 200px;
       left: 200px;
@@ -369,7 +422,7 @@ ul {
 
         &:hover {
           text-decoration: none;
-          box-shadow: 0px 0px 10px;
+          background-color: #01629b;
         }
       }
       .findout {
@@ -382,7 +435,7 @@ ul {
 
         &:hover {
           text-decoration: none;
-          box-shadow: 0px 0px 10px;
+          background-color: #363636;
         }
       }
     }
@@ -591,84 +644,91 @@ ul {
   }
 }
 @media (min-width:992px) {
-  .advertising{
-        margin-bottom: 0;
-
-  .enjoy {
-    a {
+  .advertising {
+    img {
     }
-  }
-  .app {
-    h4 {
-      font-size: 20px;
-
-      p {
-        font-size: 15px;
-        margin-left: 32%;
+    .enjoy {
+      a {
       }
     }
-    a {
+    .app {
+      h4 {
+        font-size: 20px;
+
+        p {
+          font-size: 15px;
+          margin-left: 32%;
+        }
+      }
+      a {
+      }
+    }
+    .nb {
+      .logo {
+      }
     }
   }
-  .nb {
-    .logo {
-    }
-  }
-}
 }
 @media (min-width:1200px) {
 }
 // для всех
 .advertising {
-  img{
-    height: 265px;
-  }
-  .enjoy {
+
+  a {
+    box-shadow: 0 0 0 0px #E93E6B;
+    transition: all 200ms ease;
+    display: block;
     padding: 0;
     position: relative;
 
     &:hover {
-      box-shadow: 0px 0px 20px black;
+      box-shadow: 0 0 0 5px #E93E6B;
+      z-index: 1;
     }
     img {
       opacity: 0.8;
     }
-    h4 {
+  }
+
+  .enjoy {
+    
+
+    .header{
       position: absolute;
-      top: 0;
+      top: 20px;
+
       left: 0;
       bottom: 0;
       right: 0;
       text-align: center;
-      color: #0A0A0A;
+       font-weight: 100;
+        color: #0A0A0A;
+       h4 {
+     
+     
+      
+     
       font-size: 30px;
-      font-weight: 100;
-      margin-top: 20px;
+     
+      
     }
     span {
-      color: #0A0A0A;
-      position: absolute;
-      top: 65px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      text-align: center;
+     
+      
+    
     }
+
+    }
+   
   }
   .app {
-    padding: 0;
-    position: relative;
+    
 
-    &:hover {
-      box-shadow: 0px 0px 20px black;
-    }
-    img {
-      opacity: 0.8;
-    }
+   
     h4 {
       text-transform: uppercase;
       font-style: italic;
-      text-shadow: 0.5px 0px;
+      
       margin-bottom: 25px;
       color: black;
       position: absolute;
@@ -690,15 +750,8 @@ ul {
     }
   }
   .nb {
-    padding: 0;
-    position: relative;
-
-    &:hover {
-      box-shadow: 0px 0px 20px black;
-    }
-    img {
-      opacity: 0.7;
-    }
+    
+   
     .logo {
       position: absolute;
       line-height: 1.5;
@@ -739,7 +792,16 @@ ul {
     padding: 30px;
   }
 }
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width:992px) {
+  .marathon {
+    .london {
+      width: 100%;
+      height: 500px;
+    }
+    .news {
+      width: 100%;
+    }
+  }
   .newsletter {
     padding: 30px;
   }
@@ -756,14 +818,13 @@ ul {
         bottom: 0;
         right: 0;
       }
-    
-    .news {
-      height: 533.39px;
-      border-left: 1px solid grey;
-      float: right;
+      .news {
+        height: 533.39px;
+        border-left: 1px solid grey;
+        float: right;
+      }
     }
   }
-}
 }
 @media (min-width:1200px) {
 }
@@ -773,27 +834,30 @@ ul {
     .london {
       background-image: url('/images/marathon.jpg');
       background-size: cover;
-      height: 100%;
-      &:hover{
+      box-shadow: 0 0 0 0px #E93E6B;
+      transition: all 200ms ease;
+
+      &:hover {
         text-decoration: none;
         box-shadow: 0 0 10px black;
         opacity: 0.9;
+        box-shadow: 0 0 0 5px #E93E6B;
+        z-index: 1;
       }
-      img{
-            width: 50px;
-    background: #333A40;
-    padding: 12px;
-    border-radius: 50%;
-    border: 2px solid #BA2C32;
-    float: left;
-            margin: 30px 10px 0 0;
+      img {
+        width: 50px;
+        background: #333A40;
+        padding: 12px;
+        border-radius: 50%;
+        border: 2px solid #BA2C32;
+        float: left;
+        margin: 30px 10px 0 0;
       }
-
       h5 {
         font-size: 22px;
         font-weight: 100;
         color: white;
-            padding-top: 30px;
+        padding-top: 30px;
       }
       span {
         font-weight: 100;
@@ -844,18 +908,6 @@ ul {
             }
           }
         }
-        .articles {
-          background: #D2232C;
-          padding: 15px;
-          text-transform: uppercase;
-          color: white;
-          font-size: 10px;
-
-          &:hover {
-            text-decoration: none;
-            box-shadow: 0px 0px 15px;
-          }
-        }
       }
     }
   }
@@ -875,7 +927,7 @@ ul {
           border-bottom: none;
         }
         a {
-          padding: 10px 200px;
+          padding: 10px 30px;
         }
       }
     }
