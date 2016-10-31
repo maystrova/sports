@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.sports-gallary').owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 0,
         responsiveClass: true,
         responsive: {
             0: {
@@ -19,6 +19,36 @@ $(document).ready(function() {
             },
             1200: {
                 items: 6,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+    });
+
+// каталог
+
+$(document).ready(function() {
+    $('.catalog-gallary').owlCarousel({
+        loop: true,
+        margin: 20,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
+            },
+            768: {
+                items: 3,
+                nav: false
+            },
+            992: {
+                items: 3,
+                nav: true,
+                loop: false
+            },
+            1200: {
+                items: 3,
                 nav: true,
                 loop: false
             }
