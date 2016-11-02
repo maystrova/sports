@@ -5,7 +5,7 @@ $(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 2,
+                items: 1,
                 nav: true
             },
             768: {
@@ -31,11 +31,11 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.catalog-gallery').owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 0,
         responsiveClass: true,
         responsive: {
             0: {
-                items: 2,
+                items: 3,
                 nav: true
             },
             768: {

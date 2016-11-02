@@ -428,42 +428,69 @@ ul {
   bottom: 0;
   text-align: center;
 }
-.catalog-gallary {
-  background: white;
+.catalog-gallery {
+  overflow: hidden;
 }
-.catalog-gallary .owl-nav {
+.catalog-gallery .owl-nav {
   display: none;
 }
-.catalog-gallary ul li {
-  display: block;
-  padding: 50px 0 50px 30px;
+.catalog-gallery .owl-item {
+  float: left;
+  background-color: white;
+  margin: 30px;
 }
-.catalog-gallary ul li h5 {
+.catalog-gallery .owl-item a {
+  display: block;
+  margin: 30px;
+}
+.catalog-gallery .owl-item a img {
+  width: 50%;
+  float: left;
+}
+.catalog-gallery .owl-item h5 {
   color: #272727;
   padding-bottom: 10px;
   font-weight: 100;
 }
-.catalog-gallary ul li p {
+.catalog-gallery .owl-item p {
   color: #272727;
   font-size: 17px;
   margin: 0;
 }
-.catalog-gallary ul li a {
+.catalog-gallery .owl-item .find {
   color: #272727;
   text-transform: uppercase;
   font-size: 11px;
   margin: 0;
 }
-.catalog-gallary ul li a:hover {
+.catalog-gallery .owl-item .find:hover {
   cursor: pointer;
 }
-@media (min-width: 320px) and (max-width: 768px) and (min-width: 992px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .app h4 {
     font-size: 20px;
   }
   .app h4 p {
     font-size: 15px;
-    margin-left: 32%;
+    margin-left: 35%;
+  }
+}
+@media (min-width: 768px) {
+  .app {
+    font-size: 15px;
+  }
+  .app p {
+    font-size: 10px;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .app h4 {
+    font-size: 20px;
+  }
+  .app h4 p {
+    font-size: 15px;
+    margin-left: 30%;
   }
 }
 .advertising a {
@@ -679,6 +706,9 @@ ul {
   }
   .footer ul li a {
     padding: 10px 30px;
+  }
+  .footer .account {
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) {

@@ -618,7 +618,7 @@ ul {
   }
 }
 @media (min-width:992px) {
-  .catalog-gallary {
+  .catalog-gallery {
     li {
       a {
         img {
@@ -639,16 +639,29 @@ ul {
 @media (min-width:1200px) {
 }
 // для всех
-.catalog-gallary {
-  background: white;
+.catalog-gallery {
+      overflow: hidden;
 
   .owl-nav {
     display: none;
   }
-  ul {
-    li {
-      display: block;
-      padding: 50px 0 50px 30px;
+    .owl-item {
+          float: left;
+          background-color: white;
+          margin: 30px;
+
+      
+      a{
+       display: block;
+          margin: 30px;
+
+
+        img{
+              width: 50%;
+    float: left;
+        }
+      }
+     
 
       h5 {
         color: #272727;
@@ -660,23 +673,41 @@ ul {
         font-size: 17px;
         margin: 0;
       }
-      a {
+      .find {
         color: #272727;
         text-transform: uppercase;
         font-size: 11px;
         margin: 0;
+       
+         
 
         &:hover {
           cursor: pointer;
         }
       }
     }
-  }
 }
 // реклама
 // адаптивность
 @media (min-width:320px) and (max-width:768px) {
+  .app{
+    h4{
+      font-size: 20px;
+      p{
+        font-size: 15px;
+        margin-left: 35%;
+      }
+    }
+  }
+}
   @media (min-width:768px) {
+    .app{
+      font-size: 15px;
+      p{
+        font-size: 10px;
+            margin-left: 20%;
+      }
+    }
   }
   @media (min-width:992px) {
     .app {
@@ -685,7 +716,7 @@ ul {
 
         p {
           font-size: 15px;
-          margin-left: 32%;
+          margin-left: 30%;
         }
       }
       a {
@@ -696,7 +727,7 @@ ul {
       }
     }
   }
-}
+
 @media (min-width:1200px) {
 }
 // для всех
@@ -746,6 +777,7 @@ ul {
       right: 0;
       bottom: 0;
       text-align: center;
+     
 
       p {
         text-transform: uppercase;
@@ -755,6 +787,8 @@ ul {
         font-weight: 100;
         font-style: normal;
         width: 150px;
+        
+        
       }
     }
   }
@@ -957,6 +991,9 @@ ul {
           padding: 10px 30px;
         }
       }
+    }
+    .account{
+          margin-bottom: 20px;
     }
   }
 }
