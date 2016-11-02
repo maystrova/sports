@@ -24,8 +24,8 @@
             <li><a href="#">My account</a></li>
             <li><a href="#">Change region</a></li>
             <li class="search">
-              <input type="text">
-              <i class="icon-20 i-search"></i>
+              <input type="text" class="md-none" id="searchArea">
+              <i class="icon-20 i-search" id="searchIcon"></i>
 
             </li>
             <li class="shop"><a href="#">Shop Online</a></li>
@@ -76,51 +76,50 @@
 
   <div class="container sports">
     <div class="row">
-      <ul class="sports-gallary">
-      <li class="col-xs-4 item"><a href="#"><img src="images/running.jpeg" alt="Running"><h3>Running</h3></a></li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/football.jpeg" alt="Football"><h3>Football</h3></a></li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/cycling.jpeg" alt="Cycling"><h3>Cycling</h3></a></li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/fitness.jpeg" alt="Fitness"><h3>Fitness</h3></a></li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/tennis.jpeg" alt="Tennis"><h3>Tennis</h3></a></li>
-        <!-- <li class="col-xs-3 item"><a href="#"><img src="images/boxing.jpeg" alt="Boxing"><h3>Boxing</h3></a></li> -->
-        <li class="col-xs-4 item"><a href="#"><img src="images/dancing.jpeg" alt="Dancing"><h3>Dancing</h3></a></li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/hockey.jpeg" alt="Hockey"><h3>Hockey</h3></a></li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/swimming.jpeg" alt="Swimming"><h3>Swimming</h3></a></li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/yoga.jpeg" alt="Yoga"><h3>Yoga</h3></a></li>
+      <ul class="sports-gallery">
+        <li class="item"><a href="#"><img src="images/running.jpeg" alt="Running"><h3>Running</h3></a></li>
+        <li class="item"><a href="#"><img src="images/football.jpeg" alt="Football"><h3>Football</h3></a></li>
+        <li class="item"><a href="#"><img src="images/cycling.jpeg" alt="Cycling"><h3>Cycling</h3></a></li>
+        <li class="item"><a href="#"><img src="images/fitness.jpeg" alt="Fitness"><h3>Fitness</h3></a></li>
+        <li class="item"><a href="#"><img src="images/tennis.jpeg" alt="Tennis"><h3>Tennis</h3></a></li>
+        <li class="item"><a href="#"><img src="images/dancing.jpeg" alt="Dancing"><h3>Dancing</h3></a></li>
+        <li class="item"><a href="#"><img src="images/hockey.jpeg" alt="Hockey"><h3>Hockey</h3></a></li>
+        <li class="item"><a href="#"><img src="images/swimming.jpeg" alt="Swimming"><h3>Swimming</h3></a></li>
+        <li class="item"><a href="#"><img src="images/yoga.jpeg" alt="Yoga"><h3>Yoga</h3></a></li>
       </ul>
 
     </div>
   </div>
-  <!-- <! каталог -->
+  <!-- каталог -->
 <!--   <div class="container">
     <div class="row">
-      <ul class="catalog-gallary">
-        <li class="col-xs-4 item"><a href="#"><img src="images/nike1.jpg" alt="shoes"></a>
+      <ul class="catalog-gallery">
+        <li class="item"><a href="#"><img src="images/nike1.jpg" alt="shoes"></a>
           <h5>Nike 3.0 V4 Men Grey Royal <br>Blue with White</h5>
           <p>$67.99</p>
           <a>Find a store</a>
         </li>
-        <li class="col-xs-4 item"><a href="#"><img src="images/nike2.jpg" alt="shoes"></a>
+        <li class="item"><a href="#"><img src="images/nike2.jpg" alt="shoes"></a>
          <h5>Nike 3.0 V4 Men Grey Royal <br>Blue with White</h5>
          <p>$67.99</p>
          <a>Find a store</a>
        </li>
-       <li class="col-xs-4 item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
+       <li class="item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
         <h5>Nike 3.0 V4 Men Grey Royal <br>Blue with White</h5>
         <p>$67.99</p>
         <a>Find a store</a>
       </li>
-       <li class="col-xs-4 item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
+      <li class="item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
         <h5>Nike 3.0 V4 Men Grey Royal <br>Blue with White</h5>
         <p>$67.99</p>
         <a>Find a store</a>
       </li>
-       <li class="col-xs-4 item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
+      <li class="item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
         <h5>Nike 3.0 V4 Men Grey Royal <br>Blue with White</h5>
         <p>$67.99</p>
         <a>Find a store</a>
       </li>
-       <li class="col-xs-4 item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
+      <li class="item"><a href="#"><img src="images/nike3.jpg" alt="shoes"></a>
         <h5>Nike 3.0 V4 Men Grey Royal <br>Blue with White</h5>
         <p>$67.99</p>
         <a>Find a store</a>
@@ -136,31 +135,31 @@
 
       <img src="images/jump.jpg" alt="enjoy">
       <div class="header">
-         <h4>Enjoy Fitness +</h4>
-      <span>find classes near you</span>
-      </div>
+       <h4>Enjoy Fitness +</h4>
+       <span>find classes near you</span>
+     </div>
 
      
-    </a>
+   </a>
 
 
-    <a class="col-sm-4 app" href="#">
-      <img src="images/app.jpg" alt="app">
+   <a class="col-sm-4 app" href="#">
+    <img src="images/app.jpg" alt="app">
 
-      <h4><strong>Change your habits <br>Change your pace</strong><p>Get our app</p></h4>
-      
-    </a>
+    <h4><strong>Change your habits <br>Change your pace</strong><p>Get our app</p></h4>
+
+  </a>
 
 
-    <a class="col-sm-4 nb" href="#">
-      <img src="images/newbalance.jpg" alt="newbalance">
-      <div class="logo">
-        <img class="newb" src="images/nblogo.jpg" alt="logo">
-        <p>Corre con el <span>Corazon</span></p>
-      </div>
-    </a>
+  <a class="col-sm-4 nb" href="#">
+    <img src="images/newbalance.jpg" alt="newbalance">
+    <div class="logo">
+      <img class="newb" src="images/nblogo.jpg" alt="logo">
+      <p>Corre con el <span>Corazon</span></p>
+    </div>
+  </a>
 
-  </div>
+</div>
 </div>
 <!-- новости -->
 <div class="container">
@@ -213,7 +212,7 @@
     </li>
   </ul>
 
-    <a class="button danger" href="#">View All Articles</a>
+  <a class="button danger" href="#">View All Articles</a>
 
 
 </div>

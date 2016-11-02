@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.sports-gallary').owlCarousel({
+    $('.sports-gallery').owlCarousel({
         loop: true,
         margin: 0,
         responsiveClass: true,
@@ -29,7 +29,7 @@ $(document).ready(function() {
 // каталог
 
 $(document).ready(function() {
-    $('.catalog-gallary').owlCarousel({
+    $('.catalog-gallery').owlCarousel({
         loop: true,
         margin: 20,
         responsiveClass: true,
@@ -55,3 +55,9 @@ $(document).ready(function() {
         }
     });
     });
+
+
+// Поиск в десктопной версии
+$( "#searchIcon" ).click(function() {
+  $( "#searchArea" ).toggleClass( "md-none" );
+});
