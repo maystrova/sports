@@ -9,7 +9,7 @@ $(document).ready(function() {
                 nav: true
             },
             768: {
-                items: 4,
+                items: 3,
                 nav: false
             },
             992: {
@@ -35,11 +35,11 @@ $(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 3,
+                items: 2,
                 nav: true
             },
             768: {
-                items: 3,
+                items: 2,
                 nav: false
             },
             992: {
